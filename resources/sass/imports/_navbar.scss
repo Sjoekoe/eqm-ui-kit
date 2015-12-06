@@ -8,11 +8,17 @@ $navbar-inverse-bg: $green-brand;
 #navbar li a {
     color: white !important;
 }
+
+.navbar-nav li a {
+    text-transform: uppercase !important;
+    font-size: 10px !important;
+    letter-spacing: 1px !important;
+}
 .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
     background-color: $green !important;
 }
 
-ul.dropdown-menu {
+.dropdown a ul.dropdown-menu {
     background-color: $gray-dark !important;
 }
 

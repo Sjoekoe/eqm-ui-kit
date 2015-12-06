@@ -7344,11 +7344,17 @@ h1 {
   color: white !important;
 }
 
+.navbar-nav li a {
+  text-transform: uppercase !important;
+  font-size: 10px !important;
+  letter-spacing: 1px !important;
+}
+
 .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:focus, .navbar-inverse .navbar-nav > .open > a:hover {
   background-color: #066B57 !important;
 }
 
-ul.dropdown-menu {
+.dropdown a ul.dropdown-menu {
   background-color: #131313 !important !important;
 }
 
@@ -7394,4 +7400,8 @@ body {
 
 .theme-showcase .navbar .container {
   width: auto;
+}
+
+.nav .navbar-nav a {
+  color: white !important;
 }
