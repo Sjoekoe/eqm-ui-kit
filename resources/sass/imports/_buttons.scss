@@ -1,0 +1,9 @@
+.btn-primary {
+    background-color: $gray !important;
+    padding: 15px 20px !important;
+    border-color: 0px;
+    &:hover {
+        background-color: $green-brand !important;
+        border-color: 0px !important;
+    }
+}

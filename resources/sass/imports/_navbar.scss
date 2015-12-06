@@ -1,0 +1,25 @@
+$navbar-inverse-bg: $green-brand;
+
+.navbar-inverse {
+    background-color: $navbar-inverse-bg !important;
+    border-bottom: 0px !important;
+}
+
+#navbar li a {
+    color: white !important;
+}
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+    background-color: $green !important;
+}
+
+ul.dropdown-menu {
+    background-color: $gray-dark !important;
+}
+
+.navbar-brand {
+    color: white !important;
+}
+
+ul.nav .active {
+    background-color: $green-dark !important;
+}
