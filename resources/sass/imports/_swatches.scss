@@ -4,6 +4,7 @@ $green-dark: #1f705d !default;
 $gray-light: #e9f0f4 !important;
 $gray-brand: #9eb2c0 !important;
 $gray-dark: #2e3641 !important;
+$color-success: #2ecc71;
 $color-info: #3498db;
 $color-warning: #e67e22;
 $color-error: #bc1a3a;
@@ -29,13 +30,19 @@ $color-white: #fdffff;
 }
 .gray-light {
     background-color: $gray-light;
-    color: $green-dark;
+    color: $gray-dark;
+    border: 1px solid $gray-brand;
 }
 .gray {
     background-color: $gray-brand;
 }
+
 .gray-dark {
     background-color: $gray-dark;
+}
+
+.success {
+    background-color: $color-success;
 }
 
 .info {
@@ -50,3 +57,8 @@ $color-white: #fdffff;
     background-color: $color-error;
 }
 
+.white {
+    background-color: $color-white;
+    color: $gray-dark;
+    border: 1px solid $gray-brand;
+}
