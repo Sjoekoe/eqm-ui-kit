@@ -22,10 +22,6 @@ gulp.task('styles', function() {
     .pipe(notify({ message: 'Styles task complete' }));
 });
 
-gulp.task('default', ['clean'], function() {
-    gulp.start('styles');
-});
-
 // Clean
 gulp.task('clean', function() {
   return del(['dist/assets/css']);
@@ -39,4 +35,8 @@ gulp.task('watch', function() {
   livereload.listen();
   // Watch any files in dist/, reload on change
   gulp.watch(['dist/assets/css']).on('change', livereload.changed);
+});
+
+gulp.task('default', ['clean', 'styles', 'watch'], function() {
+    gulp.start('styles');
 });

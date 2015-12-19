@@ -10,13 +10,23 @@ $color-warning: #e67e22;
 $color-error: #bc1a3a;
 $color-white: #fdffff;
 
+.swatch-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  justify-content: left;
+}
+
 .swatch {
-    width: 350px;
+    width: 150px;
+    height: 150px;
     color: $color-white;
     border: 1px solid $color-white;
     margin: 10px;
     padding: 20px;
-    float: left;
 }
 
 .green-brand {

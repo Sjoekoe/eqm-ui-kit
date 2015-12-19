@@ -9,8 +9,10 @@
     <meta name="author" content="">
 
     <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700|Lato:400,300,400italic' rel='stylesheet' type='text/css'>
+    <!-- Video.js -->
+    <link href="http://vjs.zencdn.net/5.4.4/video-js.css" rel="stylesheet">
 
-    <title>Equimundo styles</title>
+    <title>Equimundo UI</title>
 
     <!-- Bootstrap core CSS -->
     <link href="dist/assets/css/styles.min.css" rel="stylesheet">
@@ -24,41 +26,6 @@
 
   <body role="document">
 
-    <!-- Fixed navbar -->
-    <!--
-    <nav class="navbar navbar-inverse navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="#">Equimundo UI</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#contact">Contact</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
-              <ul class="dropdown-menu">
-                <li><a href="#">Action</a></li>
-                <li><a href="#">Another action</a></li>
-                <li><a href="#">Something else here</a></li>
-                <li role="separator" class="divider"></li>
-                <li class="dropdown-header">Nav header</li>
-                <li><a href="#">Separated link</a></li>
-                <li><a href="#">One more separated link</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div><!--/.nav-collapse -->
-     <!-- </div>
-    </nav>
--->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container-fluid">
         <div class="navbar-header">
@@ -187,62 +154,124 @@
           <h4>Swatches</h4>
         </div>
 
-        <div class="swatch green-brand">
-            <strong>#1ABC9C</strong><br/>
-            <small>$green-brand</small><br/>
-            <small>BRAND TURQUOISE</small>
+        <div class="swatch-container">
+            <div class="swatch green-brand">
+                <strong>#1ABC9C</strong><br/>
+                <small>$green-brand</small><br/>
+                <small>BRAND TURQUOISE</small>
+            </div>
+            <div class="swatch green">
+                <strong>#16a085</strong><br/>
+                <small>$green</small><br/>
+                <small>GREEN</small>
+            </div>
+            <div class="swatch green-dark">
+                <strong>#1f705d</strong><br/>
+                <small>$green-dark</small><br/>
+                <small>DARK GREEN</small>
+            </div>
+            <div class="swatch gray-light">
+                <strong>#e9f0f4</strong><br/>
+                <small>$gray-light</small><br/>
+                <small>LIGHT GRAY</small>
+            </div>
+            <div class="swatch gray">
+                <strong>#9eb2c0</strong><br/>
+                <small>$gray-brand</small><br/>
+                <small>GRAY</small>
+            </div>
+            <div class="swatch gray-dark">
+                <strong>#2e3641</strong><br/>
+                <small>$gray-dark</small><br/>
+                <small>DARK GRAY</small>
+            </div>
+            <div class="swatch success">
+                <strong>#2ecc71</strong> <br>
+                <small>$color-success</small> <br>
+                <small>LIME GREEN</small>
+            </div>
+            <div class="swatch info">
+                <strong>#3498db</strong><br/>
+                <small>$color-info</small><br/>
+                <small>BRIGHT BLUE</small>
+            </div>
+            <div class="swatch warning">
+                <strong>#e67e22</strong><br/>
+                <small>$color-warning</small><br/>
+                <small>VIVID ORANGE</small>
+            </div>
+            <div class="swatch error">
+                <strong>#bc1a3a</strong><br/>
+                <small>$color-error</small><br/>
+                <small>STRONG RED</small>
+            </div>
+            <div class="swatch white">
+                <strong>#fdffff</strong><br>
+                <small>$color-white</small><br>
+                <small>VERY PALE</small>
+            </div>
         </div>
-        <div class="swatch green">
-            <strong>#16a085</strong><br/>
-            <small>$green</small><br/>
-            <small>GREEN</small>
+        <div class="row">
+
+            <div class="col-md-4">
+
+                <div class="page-header">
+                    <h4>Buttons</h4>
+                </div>
+
+                <button class="btn btn-hg btn-primary">Huge button</button>
+                <br/><br/>
+                <pre>&lt;button class="btn btn-hg btn-primary"&gt;Huge button&lt;/button&gt;</pre><br/><br/>
+                    
+                <button class="btn btn-embossed btn-primary">Embossed button</button>
+                <br/><br/>
+                <pre>&lt;button class="btn btn-embossed btn-primary"&gt;Embossed button&lt;/button&gt;</pre><br/><br/>
+                    
+                <button class="btn btn-primary">Primary button</button>
+                <br/><br/>
+                <pre>&lt;button class="btn btn-primary"&gt;Primary button&lt;/button&gt;</pre><br/><br/>
+
+                <button class="btn btn-small">Save</button>
+                <button class="btn btn-small btn-cancel">Cancel</button>
+                <br/><br/>
+                <pre>&lt;button class="btn btn-wide"&gt;Save&lt;/button&gt;<br/>&lt;button class="btn btn-cancel"&gt;Cancel&lgt;/button&gt;</pre>
+            </div>
+        
+            <div class="col-sm-3">
+                <div class="page-header">
+                    <h4>Form elements</h4>
+                </div>
+            </div>
         </div>
-        <div class="swatch green-dark">
-            <strong>#1f705d</strong><br/>
-            <small>$green-dark</small><br/>
-            <small>DARK GREEN</small>
+
+
+        <div class="page-header">
+            <h4>Timeline</h4>
         </div>
-        <div class="swatch gray-light">
-            <strong>#e9f0f4</strong><br/>
-            <small>$gray-light</small><br/>
-            <small>LIGHT GRAY</small>
+
+        <div class="page-header">
+            <h4>Comments</h4>
         </div>
-        <div class="swatch gray">
-            <strong>#9eb2c0</strong><br/>
-            <small>$gray-brand</small><br/>
-            <small>GRAY</small>
+
+        <div class="page-header">
+            <h4>Advertisements</h4>
         </div>
-        <div class="swatch gray-dark">
-            <strong>#2e3641</strong><br/>
-            <small>$gray-dark</small><br/>
-            <small>DARK GRAY</small>
+
+        <div class="page-header">
+            <h4>Video player</h4>
         </div>
-        <div class="swatch success">
-            <strong>#2ecc71</strong> <br>
-            <small>$color-success</small> <br>
-            <small>LIME GREEN</small>
-        </div>
-        <div class="swatch info">
-            <strong>#3498db</strong><br/>
-            <small>$color-info</small><br/>
-            <small>BRIGHT BLUE</small>
-        </div>
-        <div class="swatch warning">
-            <strong>#e67e22</strong><br/>
-            <small>$color-warning</small><br/>
-            <small>VIVID ORANGE</small>
-        </div>
-        <div class="swatch error">
-            <strong>#bc1a3a</strong><br/>
-            <small>$color-error</small><br/>
-            <small>STRONG RED</small>
-        </div>
-        <div class="swatch white">
-            <strong>#fdffff</strong><br>
-            <small>$color-white</small><br>
-            <small>VERY PALE</small>
-        </div>
-    </div> <!-- /container -->
+
+              <video id="my-video" class="video-js" controls preload="auto" width="640" height="264"
+              poster="resources/poster.png" data-setup="{}">
+                <source src="resources/sample.mp4" type='video/mp4'>
+                <!-- <source src="MY_VIDEO.webm" type='video/webm'> -->
+                <p class="vjs-no-js">
+                  To view this video please enable JavaScript, and consider upgrading to a web browser that
+                  <a href="http://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                </p>
+              </video>
+
+    </div> <!-- .container -->
 
 
     <!-- Bootstrap core JavaScript
@@ -251,5 +280,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="node_modules/bootstrap-sass/assets/javascripts/bootstrap.min.js"></script>
+    <!-- Video.js -->
+    <script src="http://vjs.zencdn.net/5.4.4/video.js"></script>
   </body>
 </html>
