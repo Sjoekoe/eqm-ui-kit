@@ -15280,6 +15280,10 @@ h1 {
   outline: 0px;
 }
 
+textarea {
+  height: 200px;
+}
+
 .input-hg, .input-lg, .input-group-lg > .form-control,
 .input-group-lg > .input-group-addon,
 .input-group-lg > .input-group-btn > .btn {
@@ -15424,6 +15428,155 @@ ul.nav .active {
   background-color: #98152f;
 }
 
+/**
+ * timeline
+ * --------------------------------------------------
+ */
+.timeline dl {
+  position: relative;
+  top: 0;
+  margin: 0;
+  padding: 20px 0;
+}
+.timeline dl:before {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -1px;
+  width: 2px;
+  content: '';
+  background-color: #ebeff2;
+  z-index: 100;
+}
+.timeline dl dt {
+  position: relative;
+  top: 30px;
+  padding: 3px 5px;
+  margin: 0 auto 30px;
+  text-align: center;
+  background-color: #1abf9f;
+  font-weight: normal;
+  color: #fdffff;
+  width: 120px;
+  z-index: 200;
+}
+.timeline dl dd {
+  position: relative;
+  z-index: 200;
+}
+.timeline dl dd .circ {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  margin-left: -11px;
+  border: 4px solid #ebeff2;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #16a085;
+  z-index: 200;
+}
+.timeline dl dd .time {
+  position: absolute;
+  top: 31px;
+  left: 50%;
+  padding: 10px 20px;
+  width: 100px;
+  display: inline-block;
+  color: #16a085;
+}
+.timeline dl dd .events {
+  position: relative;
+  margin-top: 31px;
+  padding: 10px 10px 0;
+  border-radius: 4px;
+  background-color: #ebeff2;
+  width: 47%;
+}
+.timeline dl dd .events:before {
+  position: absolute;
+  top: 12px;
+  width: 0;
+  height: 0;
+  content: '';
+  border-width: 6px;
+  border-style: solid;
+}
+.timeline dl dd .events .events-object {
+  margin-right: 10px;
+}
+.timeline dl dd .events .events-body {
+  overflow: hidden;
+  zoom: 1;
+}
+.timeline dl dd .events .events-body .events-heading {
+  margin: 0 0 10px;
+  font-size: 14px;
+}
+.timeline dl dd.pos-right .time {
+  margin-left: -100px;
+  text-align: right;
+}
+.timeline dl dd.pos-right .events {
+  color: #2f2f2f;
+  font-size: 13px;
+  float: right;
+}
+.timeline dl dd.pos-right .events:before {
+  left: -12px;
+  border-color: transparent #ebeff2 transparent transparent;
+}
+.timeline dl dd.pos-left .time {
+  margin-left: 0;
+  text-align: left;
+}
+.timeline dl dd.pos-left .events {
+  color: #2f2f2f;
+  font-size: 13px;
+  float: left;
+}
+.timeline dl dd.pos-left .events:before {
+  right: -12px;
+  border-color: transparent transparent transparent #ebeff2;
+}
+
+@media screen and (max-width: 767px) {
+  .timeline dl:before {
+    left: 60px;
+  }
+  .timeline dl dt {
+    margin: 0 0 30px;
+  }
+  .timeline dl dd .circ {
+    left: 60px;
+  }
+  .timeline dl dd .time {
+    left: 0;
+  }
+  .timeline dl dd.pos-left .time {
+    margin-left: 0;
+    padding: 10px 0;
+    text-align: left;
+  }
+  .timeline dl dd.pos-left .events {
+    float: right;
+    width: 84%;
+  }
+  .timeline dl dd.pos-left .events:before {
+    left: -12px;
+    border-color: transparent #fdffff transparent transparent;
+  }
+  .timeline dl dd.pos-right .time {
+    margin-left: 0;
+    padding: 10px 0;
+    text-align: left;
+  }
+  .timeline dl dd.pos-right .events {
+    float: right;
+    width: 84%;
+  }
+}
 /* UI KIT INDEX */
 * {
   border: 0px;
@@ -15462,6 +15615,10 @@ body {
 
 .nav .navbar-nav a {
   color: white !important;
+}
+
+.img-rounded {
+  border-radius: 50%;
 }
 
 /* pretty <pre> code */

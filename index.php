@@ -120,7 +120,7 @@
       <div class="row">
       <div class="col-md-7">
         <div class="page-header">
-          <h4 id="typography">Typography</h4>
+          <h4 id="typography">Fonts</h4>
         </div>
 
         <div class="row">
@@ -153,6 +153,12 @@
           <h6>h6. Equimundo</h6>
       </div>
     </div>
+
+    <div class="page-header">
+        <h4 id="swatches">Typography</h4>
+    </div>
+
+
 
     <!--
     <div class="row">
@@ -228,162 +234,251 @@
         </div>
 
 
-                <div class="page-header">
-                    <h4>Buttons</h4>
-                </div>
+        <div class="page-header">
+            <h4>Buttons</h4>
+        </div>
 
-                <div class="row">
-                    <div class="col-lg-5">
-                        <button class="btn btn-hg btn-primary">Huge button</button>
-                        <br/><br/>
-                        <pre>&lt;button class="btn btn-hg btn-primary"&gt;<br/>   Huge button<br/>&lt;/button&gt;</pre><br/><br/>
-                            
-                        <button class="btn btn-embossed btn-primary">Embossed button</button>
-                        <br/><br/>
-                        <pre>&lt;button class="btn btn-embossed btn-primary"&gt;<br/>   Embossed button<br/>&lt;/button&gt;</pre><br/><br/>
-                    </div>
+        <div class="row">
+            <div class="col-lg-5">
+                <button class="btn btn-hg btn-primary">Huge button</button>
+                <br/><br/>
+                <pre>&lt;button class="btn btn-hg btn-primary"&gt;<br/>   Huge button<br/>&lt;/button&gt;</pre><br/><br/>
                     
-                    <div class="col-lg-5">
-                        <button class="btn btn-primary">Primary button</button>
-                        <br/><br/>
-                        <pre>&lt;button class="btn btn-primary"&gt;<br/>   Primary button<br/>&lt;/button&gt;</pre><br/><br/>
+                <button class="btn btn-embossed btn-primary">Embossed button</button>
+                <br/><br/>
+                <pre>&lt;button class="btn btn-embossed btn-primary"&gt;<br/>   Embossed button<br/>&lt;/button&gt;</pre><br/><br/>
+            </div>
+            
+            <div class="col-lg-5">
+                <button class="btn btn-primary">Primary button</button>
+                <br/><br/>
+                <pre>&lt;button class="btn btn-primary"&gt;<br/>Primary button<br/>&lt;/button&gt;</pre><br/><br/>
 
-                        <button class="btn btn-small">Save</button>
-                        <button class="btn btn-small btn-cancel">Cancel</button>
-                        <br/><br/>
-                        <pre>&lt;button class="btn btn-wide"&gt;Save&lt;/button&gt;<br/>&lt;button class="btn btn-cancel"&gt;Cancel&lgt;/button&gt;</pre>
+                <button class="btn btn-small">Save</button>
+                <button class="btn btn-small btn-cancel">Cancel</button>
+                <br/><br/>
+                <pre>&lt;button class="btn btn-wide"&gt;Save&lt;/button&gt;<br/>&lt;button class="btn btn-cancel"&gt;Cancel&lgt;/button&gt;</pre>
+            </div>
+        </div>
+
+        <div class="page-header">
+            <h4>Form elements</h4>
+        </div>
+
+        <h6>INPUT</h6><br/>
+        <form>
+            <fieldset>
+                <div class="row">
+                    <div class="col-md-5">
+                        <input type="text" class="form-control input-hg" placeholder="Huge" /><br/>
+                        <pre>&lt;input type=<span class="atv">"text"</span> class=<span class="atv">"form-control input-hg"</span> placeholder=<span class="atv">"Huge"</span> /&gt;</pre><hr/>
+                        <input type="text" class="form-control input-lg" placeholder="Large" /><br/>
+                        <pre>&lt;input type=<span class="atv">"text"</span> class=<span class="atv">"form-control input-lg"</span> placeholder=<span class="atv">"Large"</span> /&gt;</pre>
+                    </div>
+                    <div class="col-md-5">
+                        <input type="text" class="form-control" placeholder="Default" /><br/>
+                        <pre>&lt;input type=<span class="atv">"text"</span> class=<span class="atv">"form-control"</span> placeholder=<span class="atv">"Default"</span> /&gt;</pre><hr/>
+                        <input type="text" class="form-control input-sm" placeholder="Small" /><br/>
+                        <pre>&lt;input type=<span class="atv">"text"</span> class=<span class="atv">"form-control input-sm"</span> placeholder=<span class="atv">"Small"</span> /&gt;</pre>
+                    </div>
+                </div><hr />
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="form-group has-feedback">
+                          <input type="text" value="" placeholder="With icon" class="form-control" />
+                          <span class="form-control-feedback fui-check"></span>
+                        </div>
+
+                        <!-- Prepend -->
+                        <div class="input-group">
+                          <span class="input-group-addon">@</span>
+                          <input type="text" class="form-control" placeholder="Prepend" />
+                        </div><br/>
+
+                        <!-- Append -->
+                        <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Append" />
+                          <span class="input-group-addon">@</span>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <pre>&lt;div class="form-group has-feedback"&gt;<br/>&lt;input type="text" value="" placeholder="With icon" class="form-control" /&gt;<br/>&lt;span class="form-control-feedback fui-check"&gt;&lt;/span&gt;<br/>&lt;/div&gt;<br/><br/>&lt;!-- Prepend --&gt;<br/>&lt;div class="input-group"&gt;<br/><span class="tag">&lt;span class=<span class="atv">"input-group-addon"</span>&gt;</span>@&lt;<span class="tag">/span</span>&gt;<br/>&lt;input type=<span class="atv">"text"</span> class=<span class="atv">"form-control"</span> placeholder=<span class="atv">"Prepend"</span> /&gt;<br/>&lt;/div&gt;<br/><br/>&lt;!-- Append --&gt;<br/>&lt;div class=<span class="atv">"input-group"</span>&gt;<br/>&lt;input type=<span class="atv">"text"</span> class=<span class="atv">"form-control"</span> placeholder=<span class="atv">"Append"</span> /&gt;<br/>&lt;span class=<span class="atv">"input-group-addon"</span>>@&lt;/span&gt;<br/>&lt;/div&gt;
+                        </pre>
+                    </div>
+                </div><hr/>
+                <div class="row">
+                    <div class="col-md-5">
+                        <!-- Default skin  -->
+                        <div class="btn-group">
+                          <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
+                           Dropdown menu<span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+
+                        <!-- Inverted skin  -->
+                        <div class="btn-group">
+                          <button class="btn btn-inverse dropdown-toggle" type="button" data-toggle="dropdown">
+                            Dropdown menu<span class="caret"></span>
+                          </button>
+                          <ul class="dropdown-menu dropdown-menu-inverse" role="menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                          </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <pre class="prettify lang-html">&lt;!-- Default skin  --&gt;<br/>&lt;div class="btn-group"&gt;<br/>&lt;button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"&gt;<br/>Dropdown menu&lt;span class="caret"&gt;&lt;/span&gt;<br/>&lt;/button&gt;<br/>&lt;ul class="dropdown-menu" role="menu"&gt;<br/>&lt;li&gt;&lt;a href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;<br/>&lt;li&gt;&lt;a href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;<br/>&lt;li&gt;&lt;a href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;<br/>&lt;li class="divider"&gt;&lt;/li&gt;<br/>&lt;li&gt;&lt;a href="#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;<br/>&lt;/ul&gt;<br/>&lt;/div&gt;<br/><br/>&lt;!-- Inverted skin  --&gt;<br/>&lt;div class="btn-group"&gt;<br/>&lt;button class="btn btn-inverse dropdown-toggle" type="button" data-toggle="dropdown"&gt;<br/>Dropdown menu&lt;span class="caret"&gt;&lt;/span&gt;<br/>&lt;/button&gt;<br/>&lt;ul class="dropdown-menu dropdown-menu-inverse" role="menu"&gt;<br/>&lt;li&gt;&lt;a href="#">Action</a>&lt;/li&gt;<br/>&lt;li&gt;&lt;a href="#">Another action&lt;/a>&lt;/li&gt;<br/>&lt;li&gt;&lt;a href="#">Something else here&lt;/a>&lt;/li&gt;<br/>&lt;li class="divider">&lt;/li&gt;<br/>&lt;li&gt;&lt;a href="#">Separated link&lt;/a>&lt;/li&gt;<br/>&lt;/ul><br/>&lt;/div>
+                        </pre>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-md-5">
+                        <!-- Error state -->
+                        <div class="form-group has-error">
+                          <input class="form-control" type="text" placeholder="Error" />
+                        </div>
 
-                <div class="page-header">
-                    <h4>Form elements</h4>
+                        <!-- Warning state -->
+                        <div class="form-group has-warning">
+                          <input class="form-control" type="text" placeholder="Warning" />
+                        </div>
+
+                        <!-- Success state -->
+                        <div class="form-group has-success">
+                          <input class="form-control" type="text" placeholder="Success" />
+                        </div>
+
+                        <!-- Disabled state -->
+                        <div class="form-group">
+                          <input class="form-control" type="text" placeholder="Disabled" disabled />
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <pre class="prettyprint lang-html">&lt;!-- Error state --&gt;<br/>&lt;div class="form-group has-error"&gt;<br/>&lt;input class="form-control" type="text" placeholder="Error" /&gt;<br/>&lt;/div&gt;<br/><br/>&lt;!-- Warning state --&gt;<br/>&lt;div class="form-group has-warning"&gt;<br/>&lt;input class="form-control" type="text" placeholder="Warning" /&gt;<br/>&lt;/div&gt;<br/><br/>&lt;!-- Success state --&gt;<br/>&lt;div class="form-group has-success"&gt;<br/>&lt;input class="form-control" type="text" placeholder="Success" /&gt;<br/>&lt;/div&gt;<br/><br/>&lt;!-- Disabled state --&gt;<br/>&lt;div class="form-group"&gt;<br/>&lt;input class="form-control" type="text" placeholder="Disabled" disabled /&gt;<br/>&lt;/div&gt;
+                        </pre></div>
+
+                    <div class="col-md-5">
+                        <div class="input-group input-group-hg input-group-rounded">
+                          <span class="input-group-btn">
+                            <button type="submit" class="btn"><span class="fui-search"></span></button>
+                          </span>
+                          <input type="text" class="form-control" placeholder="Search" id="search-query-2">
+                        </div><br/>
+
+                        <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Search" id="search-query-3">
+                          <span class="input-group-btn">
+                            <button type="submit" class="btn"><span class="fui-search"></span></button>
+                          </span>
+                        </div>
+                    </div>
+                    <div class="col-md-5">
+                        <pre class="prettyprint lang-html">&lt;div class="input-group"&gt;<br/>&lt;input type="text" class="form-control" placeholder="Search" id="search-query-3"&gt;<br/>&lt;span class="input-group-btn"&gt;<br/>&lt;button type="submit" class="btn"&gt;<br/>&lt;span class="fui-search">&lt;/span&gt;&lt;/button&gt;<br/>&lt;/span&gt;<br/>&lt;/div&gt;</pre>
+                    </div>
+                </div><hr/>
+                <div class="row">
+                    <div class="col-md-5">
+                        <h6>Boxes and buttons</h6>
+                        <label class="checkbox" for="checkbox1">
+                          <input type="checkbox" value="" id="checkbox1" data-toggle="checkbox">
+                          Checkbox
+                        </label>
+
+                        <label class="radio" for="radio1">
+                            <input type="radio" name="optionsRadios1" value="" id="radio1" data-toggle="radio" class="custom-radio"><span class="icons"><span class="icon-unchecked"></span><span class="icon-checked"></span></span>
+                                Radio button
+                        </label>
+
+                        <pre class="prettyprint lang-html">&lt;label class="checkbox" for="checkbox1"&gt;<br/>&lt;input type="checkbox" value="" id="checkbox1" data-toggle="checkbox"&gt;Checkbox&lt;/label&gt;<br/><br/>&lt;label class="radio" for="radio1"&gt;<br/>&lt;input type="radio" name="optionsRadios1" value="" id="radio1" data-toggle="radio" class="custom-radio"&gt;<br/>&lt;span class="icons"&gt;&lt;span class="icon-unchecked"&gt;&lt;/span&gt;&lt;span class="icon-checked"&gt;&lt;/span&gt;&lt;/span&gt;Radio button&lt;/label&gt;
+                        </pre>
+                    </div>
+                    <div class="col-md-5">
+                        <h6>Textarea</h6>
+                        <textarea class="form-control" rows="12">This is a textarea with 12 rows. 
+
+&lt;textarea class="form-control" rows="12"&gt;&lt;textarea&gt;
+                        </textarea>
+                    </div>
                 </div>
-                Input (text, number, date), checkbox, radiobutton, textarea, dropdown
-                <h6>INPUT</h6><br/>
-                <form>
-                    <fieldset>
-                        <div class="row">
-                            <div class="col-md-5">
-                                <input type="text" class="form-control input-hg" placeholder="Huge" /><br/>
-                                <pre>&lt;input type=<span class="atv">"text"</span> class=<span class="atv">"form-control input-hg"</span> placeholder=<span class="atv">"Huge"</span> /&gt;</pre><hr/>
-                                <input type="text" class="form-control input-lg" placeholder="Large" /><br/>
-                                <pre>&lt;input type=<span class="atv">"text"</span> class=<span class="atv">"form-control input-lg"</span> placeholder=<span class="atv">"Large"</span> /&gt;</pre>
-                            </div>
-                            <div class="col-md-5">
-                                <input type="text" class="form-control" placeholder="Default" /><br/>
-                                <pre>&lt;input type=<span class="atv">"text"</span> class=<span class="atv">"form-control"</span> placeholder=<span class="atv">"Default"</span> /&gt;</pre><hr/>
-                                <input type="text" class="form-control input-sm" placeholder="Small" /><br/>
-                                <pre>&lt;input type=<span class="atv">"text"</span> class=<span class="atv">"form-control input-sm"</span> placeholder=<span class="atv">"Small"</span> /&gt;</pre>
-                            </div>
-                        </div><hr />
-                        <div class="row">
-                            <div class="col-md-5">
-                                <div class="form-group has-feedback">
-                                  <input type="text" value="" placeholder="With icon" class="form-control" />
-                                  <span class="form-control-feedback fui-check"></span>
-                                </div>
-
-                                <!-- Prepend -->
-                                <div class="input-group">
-                                  <span class="input-group-addon">@</span>
-                                  <input type="text" class="form-control" placeholder="Prepend" />
-                                </div><br/>
-
-                                <!-- Append -->
-                                <div class="input-group">
-                                  <input type="text" class="form-control" placeholder="Append" />
-                                  <span class="input-group-addon">@</span>
-                                </div>
-                            </div>
-                            <div class="col-md-5">
-                                <pre>&lt;div class="form-group has-feedback"&gt;<br/>&lt;input type="text" value="" placeholder="With icon" class="form-control" /&gt;<br/>&lt;span class="form-control-feedback fui-check"&gt;&lt;/span&gt;<br/>&lt;/div&gt;<br/><br/>&lt;!-- Prepend --&gt;<br/>&lt;div class="input-group"&gt;<br/><span class="tag">&lt;span class=<span class="atv">"input-group-addon"</span>&gt;</span>@&lt;<span class="tag">/span</span>&gt;<br/>&lt;input type=<span class="atv">"text"</span> class=<span class="atv">"form-control"</span> placeholder=<span class="atv">"Prepend"</span> /&gt;<br/>&lt;/div&gt;<br/><br/>&lt;!-- Append --&gt;<br/>&lt;div class=<span class="atv">"input-group"</span>&gt;<br/>&lt;input type=<span class="atv">"text"</span> class=<span class="atv">"form-control"</span> placeholder=<span class="atv">"Append"</span> /&gt;<br/>&lt;span class=<span class="atv">"input-group-addon"</span>>@&lt;/span&gt;<br/>&lt;/div&gt;
-                                </pre>
-                            </div>
-                        </div><hr/>
-                        <div class="row">
-                            <div class="col-md-5">
-                                <!-- Default skin  -->
-                                <div class="btn-group">
-                                  <button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">
-                                   Dropdown menu<span class="caret"></span>
-                                  </button>
-                                  <ul class="dropdown-menu" role="menu">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="#">Separated link</a></li>
-                                  </ul>
-                                </div>
-
-                                <!-- Inverted skin  -->
-                                <div class="btn-group">
-                                  <button class="btn btn-inverse dropdown-toggle" type="button" data-toggle="dropdown">
-                                    Dropdown menu<span class="caret"></span>
-                                  </button>
-                                  <ul class="dropdown-menu dropdown-menu-inverse" role="menu">
-                                    <li><a href="#">Action</a></li>
-                                    <li><a href="#">Another action</a></li>
-                                    <li><a href="#">Something else here</a></li>
-                                    <li class="divider"></li>
-                                    <li><a href="#">Separated link</a></li>
-                                  </ul>
-                                </div>
-                            </div>
-                            <div class="col-md-5">
-                                <pre class="prettify lang-html">&lt;!-- Default skin  --&gt;<br/>&lt;div class="btn-group"&gt;<br/>&lt;button class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown"&gt;<br/>Dropdown menu&lt;span class="caret"&gt;&lt;/span&gt;<br/>&lt;/button&gt;<br/>&lt;ul class="dropdown-menu" role="menu"&gt;<br/>&lt;li&gt;&lt;a href="#"&gt;Action&lt;/a&gt;&lt;/li&gt;<br/>&lt;li&gt;&lt;a href="#"&gt;Another action&lt;/a&gt;&lt;/li&gt;<br/>&lt;li&gt;&lt;a href="#"&gt;Something else here&lt;/a&gt;&lt;/li&gt;<br/>&lt;li class="divider"&gt;&lt;/li&gt;<br/>&lt;li&gt;&lt;a href="#"&gt;Separated link&lt;/a&gt;&lt;/li&gt;<br/>&lt;/ul&gt;<br/>&lt;/div&gt;<br/><br/>&lt;!-- Inverted skin  --&gt;<br/>&lt;div class="btn-group"&gt;<br/>&lt;button class="btn btn-inverse dropdown-toggle" type="button" data-toggle="dropdown"&gt;<br/>Dropdown menu&lt;span class="caret"&gt;&lt;/span&gt;<br/>&lt;/button&gt;<br/>&lt;ul class="dropdown-menu dropdown-menu-inverse" role="menu"&gt;<br/>&lt;li&gt;&lt;a href="#">Action</a>&lt;/li&gt;<br/>&lt;li&gt;&lt;a href="#">Another action&lt;/a>&lt;/li&gt;<br/>&lt;li&gt;&lt;a href="#">Something else here&lt;/a>&lt;/li&gt;<br/>&lt;li class="divider">&lt;/li&gt;<br/>&lt;li&gt;&lt;a href="#">Separated link&lt;/a>&lt;/li&gt;<br/>&lt;/ul><br/>&lt;/div>
-                                </pre>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-5">
-                                <!-- Error state -->
-                                <div class="form-group has-error">
-                                  <input class="form-control" type="text" placeholder="Error" />
-                                </div>
-
-                                <!-- Warning state -->
-                                <div class="form-group has-warning">
-                                  <input class="form-control" type="text" placeholder="Warning" />
-                                </div>
-
-                                <!-- Success state -->
-                                <div class="form-group has-success">
-                                  <input class="form-control" type="text" placeholder="Success" />
-                                </div>
-
-                                <!-- Disabled state -->
-                                <div class="form-group">
-                                  <input class="form-control" type="text" placeholder="Disabled" disabled />
-                                </div>
-                            </div>
-                            <div class="col-md-5">
-                                <pre class="prettyprint lang-html">&lt;!-- Error state --&gt;<br/>&lt;div class="form-group has-error"&gt;<br/>&lt;input class="form-control" type="text" placeholder="Error" /&gt;<br/>&lt;/div&gt;<br/><br/>&lt;!-- Warning state --&gt;<br/>&lt;div class="form-group has-warning"&gt;<br/>&lt;input class="form-control" type="text" placeholder="Warning" /&gt;<br/>&lt;/div&gt;<br/><br/>&lt;!-- Success state --&gt;<br/>&lt;div class="form-group has-success"&gt;<br/>&lt;input class="form-control" type="text" placeholder="Success" /&gt;<br/>&lt;/div&gt;<br/><br/>&lt;!-- Disabled state --&gt;<br/>&lt;div class="form-group"&gt;<br/>&lt;input class="form-control" type="text" placeholder="Disabled" disabled /&gt;<br/>&lt;/div&gt;
-                                </pre></div>
-
-                            <div class="col-md-5">
-                                <div class="input-group input-group-hg input-group-rounded">
-                                  <span class="input-group-btn">
-                                    <button type="submit" class="btn"><span class="fui-search"></span></button>
-                                  </span>
-                                  <input type="text" class="form-control" placeholder="Search" id="search-query-2">
-                                </div><br/>
-
-                                <div class="input-group">
-                                  <input type="text" class="form-control" placeholder="Search" id="search-query-3">
-                                  <span class="input-group-btn">
-                                    <button type="submit" class="btn"><span class="fui-search"></span></button>
-                                  </span>
-                                </div>
-                            </div>
-                        </div>
-                    </fieldset>
-                </form>
-
+            </fieldset>
+        </form>
 
         <div class="page-header">
             <h4>Timeline</h4>
         </div>
+
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="timeline">
+                      <dl>
+                          <dt>Apr 2014</dt>
+                          <dd class="pos-right clearfix">
+                              <div class="circ"></div>
+                              <div class="time">Apr 14</div>
+                              <div class="events">
+                                  <div class="pull-left">
+                                      <img class="events-object img-rounded" src="http://placehold.it/100x100">
+                                  </div>
+                                  <div class="events-body">
+                                      <h5 class="events-heading">Equimundo</h5>
+                                      <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.</p>
+                                  </div>
+                              </div>
+                          </dd>
+                          <dd class="pos-left clearfix">
+                              <div class="circ"></div>
+                              <div class="time">Apr 10</div>
+                              <div class="events">
+                                  <div class="pull-left">
+                                      <img class="events-object img-rounded" src="http://placehold.it/100x100">
+                                  </div>
+                                  <div class="events-body">
+                                      <h5 class="events-heading">Equimundo</h5>
+                                      <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.</p>
+                                  </div>
+                              </div>
+                          </dd>
+                          <dt>Mar 2014</dt>
+                          <dd class="pos-right clearfix">
+                              <div class="circ"></div>
+                              <div class="time">Mar 15</div>
+                              <div class="events">
+                                  <div class="pull-left">
+                                      <img class="events-object img-rounded" src="http://placehold.it/100x100">
+                                  </div>
+                                  <div class="events-body">
+                                      <h5 class="events-heading">Equimundo</h5>
+                                      <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.</p>
+                                  </div>
+                              </div>
+                          </dd>
+                          <dd class="pos-left clearfix">
+                              <div class="circ"></div>
+                              <div class="time">Mar 8</div>
+                              <div class="events">
+                                  <div class="pull-left">
+                                      <img class="events-object img-rounded" src="http://placehold.it/100x100">
+                                  </div>
+                                  <div class="events-body">
+                                      <h5 class="events-heading">Equimundo</h5>
+                                      <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.</p>
+                                  </div>
+                              </div>
+                          </dd>
+
+                      </dl>
+                  </div>
+            </div>
 
         <div class="page-header">
             <h4>Comments</h4>
@@ -421,5 +516,8 @@
     <script src="http://vjs.zencdn.net/5.4.4/video.js"></script>
     <!-- Flat UI -->
     <script src="resources/scripts/flat-ui.min.js"></script>
+    <script>
+        $(':checkbox').radiocheck();
+    </script>
   </body>
 </html>
