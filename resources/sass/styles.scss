@@ -1,32 +1,52 @@
 @import "../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
-@import "imports"; /* _swatches.scss, _typography.scss */
-
-/* To do */
-/* 
-@import "imports/navbar";
-@import "imports/buttons"; 
-*/
+@import "imports";
 
 /* UI KIT INDEX */
+* {
+    border: 0px;
+    outline: 0px;
+    margin: 0px;
+    border: 0px;
+}
+
 body {
-  padding-top: 70px;
-  padding-bottom: 30px;
+    background-color: $color-white;
+    padding-top: 70px;
+    padding-bottom: 30px;
+}
+
+.sidebar {
+    top: 70px; 
+    right: 0px; 
+    width: 200px; 
+    position: fixed;
+    z-index: 100;
 }
 
 .theme-dropdown .dropdown-menu {
-  position: static;
-  display: block;
-  margin-bottom: 20px;
+    position: static;
+    display: block;
+    margin-bottom: 20px;
 }
 
 .theme-showcase > p > .btn {
-  margin: 5px 0;
+    margin: 5px 0;
 }
 
 .theme-showcase .navbar .container {
-  width: auto;
+    width: auto;
 }
 
 .nav .navbar-nav a {
     color: white !important;
+}
+
+/* pretty <pre> code */
+pre {
+    font-size: 11px;
+    background-color: $gray-light;
+    border-color: $gray-light;
+}
+.atv {
+    color: $color-error;
 }

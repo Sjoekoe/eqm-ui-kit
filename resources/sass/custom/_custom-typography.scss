@@ -1,0 +1,53 @@
+@font-face {
+  font-family: 'Flat-UI-Icons';
+  src: url('../../resources/fonts/glyphicons/flat-ui-icons-regular.eot');
+  src: 
+    url('../../../resources/fonts/glyphicons/flat-ui-icons-regular.eot?#iefix') format('embedded-opentype'), 
+    url('../../../resources/fonts/glyphicons/flat-ui-icons-regular.woff') format('woff'), 
+    url('../../../resources/fonts/glyphicons/flat-ui-icons-regular.ttf') format('truetype'), 
+    url('../../../resources/fonts/glyphicons/flat-ui-icons-regular.svg#flat-ui-icons-regular') format('svg');
+}
+
+/* Override font variables */
+$font-family-sans-serif: "Lato", sans-serif;
+$font-family-serif: "Lora", sans-serif;
+$font-family-icons: "Flat-UI-Icons", sans-serif;
+
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: $font-family-sans-serif;
+    font-weight: normal; 
+}
+
+.lato {
+    font-family: $font-family-sans-serif;
+}
+
+.lora {
+    font-family: $font-family-serif;
+}
+
+h6 {
+    font-size: 11px; 
+    letter-spacing: 1pt; 
+    font-weight: normal; 
+    text-transform: uppercase; 
+}
+
+h5 {
+    line-height: 40px;
+    font-weight: bold;
+}
+
+h4 {
+    margin-bottom: 0px;
+    line-height: 20px;
+}
+
+h3 {
+    font-family: $font-family-serif;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: $green-brand !important;
+}

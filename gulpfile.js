@@ -19,7 +19,8 @@ gulp.task('styles', function() {
     .pipe(rename({suffix: '.min'}))
     .pipe(minifycss())
     .pipe(gulp.dest('dist/assets/css'))
-    .pipe(notify({ message: 'Styles task complete' }));
+    .pipe(notify({ message: 'Styles task complete' }))
+    .pipe(livereload());
 });
 
 // Clean
@@ -30,7 +31,8 @@ gulp.task('clean', function() {
 gulp.task('watch', function() {
   // Watch .scss files
   gulp.watch('resources/sass/*.scss', ['styles']);
-  gulp.watch('resources/sass/imports/*.scss', ['styles']);
+  gulp.watch('resources/sass/bootstrap/*.scss', ['styles']);
+  gulp.watch('resources/sass/custom/*.scss', ['styles']);
   // Create LiveReload server
   livereload.listen();
   // Watch any files in dist/, reload on change

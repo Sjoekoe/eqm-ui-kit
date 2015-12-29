@@ -1,4 +1,11 @@
-@import "imports/swatches";
-@import "imports/typography";
-@import "imports/navbar";
-@import "imports/buttons";
+/* The one and only original Bootstrap */
+@import "bootstrap/mixins";
+@import "bootstrap/forms";
+/* Flat UI */
+@import "flatui/flat-ui";
+/* Our own custom styles */ 
+@import "custom/custom-swatches";
+@import "custom/custom-typography";
+@import "custom/custom-forms";
+@import "custom/custom-navbar";
+@import "custom/custom-buttons";
