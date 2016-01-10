@@ -16,6 +16,8 @@
     <title>Equimundo UI</title>
 
     <link href="dist/assets/css/styles.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -109,7 +111,7 @@
                     <li class="list-group-item"><a href="#buttons">Buttons</a></li>
                     <li class="list-group-item"><a href="#formelements">Form elements</a></li>
                     <li class="list-group-item"><a href="#timeline">Timeline</a></li>
-                    <li class="list-group-item"><a href="#comments">Comments</a></li>
+                    <li class="list-group-item"><a href="#timeline">Comments</a></li>
                     <li class="list-group-item"><a href="#advertisements">Advertisements</a></li>
                     <li class="list-group-item"><a href="#videoplayer">Video player</a></li>
                   </ul>
@@ -414,7 +416,7 @@
         </form>
 
         <div class="page-header">
-            <h4>Timeline</h4>
+            <h4 id="timeline">Timeline</h4>
         </div>
 
         <div class="row">
@@ -424,15 +426,12 @@
                           <dt>Apr 2014</dt>
                           <dd class="pos-right clearfix">
                               <div class="circ"></div>
-                              <div class="time" style="width: 200px;">
-                                <div class="time">Apr 14</div>
-                                <div class="meta">
-                                    <a href="#" class="view"></a>
-                                    <a href="#" class="share"></a>
-                                    <a href="#" class="comments"></a>
-                                    <a href="#" class="likes"></a>
+                                <div class="time" style="width: 250px;">Apr 14<br/>
+                                    <a href="#" class="fa fa-search"></a>
+                                    <a href="#" class="fa fa-share-alt"></a>
+                                    <a href="#" class="fa fa-comments-o"></a>
+                                    <a href="#" class="fa fa-heart-o">&nbsp;0</a>
                                 </div>
-                              </div>
                               <div class="events">
                                   <div class="status">
                                       <div class="pull-left">
@@ -485,10 +484,6 @@
                       </dl>
                   </div>
             </div>
-
-        <div class="page-header">
-            <h4>Comments</h4>
-        </div>
 
         <div class="page-header">
             <h4>Advertisements</h4>

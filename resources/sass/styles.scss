@@ -20,7 +20,8 @@ body {
     right: 0px; 
     width: 200px; 
     position: fixed;
-    z-index: 100;
+    z-index: 1000;
+    background-color: $color-white !important;
 }
 
 .theme-dropdown .dropdown-menu {

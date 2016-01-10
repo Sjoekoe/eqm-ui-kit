@@ -15519,7 +15519,7 @@ ul.nav .active {
   font-size: 14px;
 }
 .timeline dl dd.pos-right .time {
-  margin-left: -100px;
+  margin-left: -250px;
   text-align: right;
 }
 .timeline dl dd.pos-right .events {
@@ -15641,7 +15641,8 @@ body {
   right: 0px;
   width: 200px;
   position: fixed;
-  z-index: 100;
+  z-index: 1000;
+  background-color: #fdffff !important;
 }
 
 .theme-dropdown .dropdown-menu {
