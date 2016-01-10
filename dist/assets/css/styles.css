@@ -15489,7 +15489,7 @@ ul.nav .active {
 .timeline dl dd .events {
   position: relative;
   margin-top: 31px;
-  padding: 10px 10px 0;
+  padding: 20px;
   border-radius: 4px;
   background-color: #ebeff2;
   width: 47%;
@@ -15503,12 +15503,16 @@ ul.nav .active {
   border-width: 6px;
   border-style: solid;
 }
-.timeline dl dd .events .events-object {
-  margin-right: 10px;
+.timeline dl dd .events .status {
+  border-bottom: 1px solid #fdffff;
+}
+.timeline dl dd .events .horse-avatar {
+  margin-right: 20px;
 }
 .timeline dl dd .events .events-body {
   overflow: hidden;
   zoom: 1;
+  border-bottom: 1px solid #ebeff2;
 }
 .timeline dl dd .events .events-body .events-heading {
   margin: 0 0 10px;
@@ -15577,6 +15581,47 @@ ul.nav .active {
     width: 84%;
   }
 }
+/* COMMENTS */
+.comments {
+  margin-left: 120px;
+}
+
+.subcomments {
+  margin-left: 40px;
+}
+
+.comments p,
+.subcomments p {
+  line-height: 15px;
+}
+
+.has-subcomments {
+  border-bottom: 1px solid #fdffff;
+}
+
+.comment, .subcomment {
+  padding: 10px 10px 10px 0px;
+}
+
+.comment:not(:first-child), .subcomment:not(:first-child) {
+  border-top: 1px solid #fdffff;
+}
+
+.comment-name {
+  margin: 0px;
+  line-height: 20px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.comment-meta {
+  color: #9eb2c0;
+}
+
+.comment-time, .comment-.bullet {
+  color: #9eb2c0;
+}
+
 /* UI KIT INDEX */
 * {
   border: 0px;

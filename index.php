@@ -424,54 +424,60 @@
                           <dt>Apr 2014</dt>
                           <dd class="pos-right clearfix">
                               <div class="circ"></div>
-                              <div class="time">Apr 14</div>
-                              <div class="events">
-                                  <div class="pull-left">
-                                      <img class="events-object img-rounded" src="http://placehold.it/100x100">
-                                  </div>
-                                  <div class="events-body">
-                                      <h5 class="events-heading">Equimundo</h5>
-                                      <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.</p>
-                                  </div>
+                              <div class="time" style="width: 200px;">
+                                <div class="time">Apr 14</div>
+                                <div class="meta">
+                                    <a href="#" class="view"></a>
+                                    <a href="#" class="share"></a>
+                                    <a href="#" class="comments"></a>
+                                    <a href="#" class="likes"></a>
+                                </div>
                               </div>
-                          </dd>
-                          <dd class="pos-left clearfix">
-                              <div class="circ"></div>
-                              <div class="time">Apr 10</div>
                               <div class="events">
-                                  <div class="pull-left">
-                                      <img class="events-object img-rounded" src="http://placehold.it/100x100">
+                                  <div class="status">
+                                      <div class="pull-left">
+                                          <img class="horse-avatar img-rounded" src="http://placehold.it/100x100">
+                                      </div>
+                                      <div class="events-body">
+                                          <a href="#"><h5 class="events-heading">Equimundo</h5></a>
+                                          <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.</p>
+                                      </div>
                                   </div>
-                                  <div class="events-body">
-                                      <h5 class="events-heading">Equimundo</h5>
-                                      <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.</p>
-                                  </div>
-                              </div>
-                          </dd>
-                          <dt>Mar 2014</dt>
-                          <dd class="pos-right clearfix">
-                              <div class="circ"></div>
-                              <div class="time">Mar 15</div>
-                              <div class="events">
-                                  <div class="pull-left">
-                                      <img class="events-object img-rounded" src="http://placehold.it/100x100">
-                                  </div>
-                                  <div class="events-body">
-                                      <h5 class="events-heading">Equimundo</h5>
-                                      <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.</p>
-                                  </div>
-                              </div>
-                          </dd>
-                          <dd class="pos-left clearfix">
-                              <div class="circ"></div>
-                              <div class="time">Mar 8</div>
-                              <div class="events">
-                                  <div class="pull-left">
-                                      <img class="events-object img-rounded" src="http://placehold.it/100x100">
-                                  </div>
-                                  <div class="events-body">
-                                      <h5 class="events-heading">Equimundo</h5>
-                                      <p>Raw denim you probably haven't heard of them jean shorts Austin. Nesciunt tofu stumptown aliqua, retro synth master cleanse. Mustache cliche tempor, williamsburg carles vegan helvetica.</p>
+                                  <div class="comments">
+                                      <div class="comment has-subcomments">
+                                          <a href="#"><h5 class="comment-name">Caroline Vermeir</h5></a>
+                                          <p>This is a comment</p>
+                                          <div class="comment-meta">
+                                            <span class="comment-time">5 seconds ago</span> 
+                                            <span class="bullet">•</span> 
+                                            <a href="#">reageren</a> 
+                                            <span class="bullet">•</span> 
+                                            <a href="#">vind ik leuk</a>
+                                          </div>
+                                      </div>                                          
+                                           <div class="subcomments">
+                                              <div class="subcomment">
+                                                  <a href="#"><h5 class="comment-name">Caroline Vermeir</h5></a>
+                                                  <p>This is a subcomment</p>
+                                              <div class="comment-meta">
+                                                <span class="comment-time">3 seconds ago</span> 
+                                                <span class="bullet">•</span> 
+                                                <a href="#">reageren</a> 
+                                                <span class="bullet">•</span> 
+                                                <a href="#">vind ik leuk</a>
+                                              </div>                                              </div>
+                                          </div>
+                                      <div class="comment">
+                                          <a href="#"><h5 class="comment-name">Hans Jonckers</h5></a>
+                                          <p>This is another comment</p>
+
+                                          <div class="comment-meta">
+                                            <span class="comment-time">3 seconds ago</span> 
+                                            <span class="bullet">•</span> 
+                                            <a href="#">reageren</a> 
+                                            <span class="bullet">•</span> 
+                                            <a href="#">vind ik leuk</a>
+                                          </div>                                      </div>
                                   </div>
                               </div>
                           </dd>
